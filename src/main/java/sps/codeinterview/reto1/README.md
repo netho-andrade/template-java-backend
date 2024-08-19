@@ -1,24 +1,40 @@
-RETO 1. CRUD REPOSITORY Y EXCEPCIONES
+># RETO 1. CRUD REPOSITORY Y EXCEPCIONES
 
->Sección 1: CRUD Repository
+### Sección 1: CRUD Repository
 
-  Topic: Implementa un servicio RESTful en Spring Boot.
+	Topic: Implementa un servicio RESTful en Spring Boot.
 
-    Descripción: Crea un servicio RESTful que maneje operaciones CRUD para una entidad Product con atributos id, name, label, price y createdAt.
-			Requisitos:
-				Define la entidad Product.
-				Crea un repositorio JPA para Product.
-				Implementa un controlador REST con endpoints para crear, consultar, actualizar y eliminar productos.
-  
-  Topic: Consulta con filtros.
-		
-    Descripción: Mejora el servicio RESTful anterior para la búsqueda por name.
-			Requisitos:
-				Añade un parámetro de consulta para obtener todos los Products por orden descendente en el mismo endpoint.
+Crea un servicio RESTful que maneje operaciones de lectura, escritura, actualización y borrado de registros.
 
->Sección 2: Validaciones
+Entidad: 
 
-  Topic: Crea validaciones y manejo de excepciones para los métodos y campos de la aplicación
-		
-    Descripción: Utiliza anotaciones para realizar validaciones de tipo y datos no nulos en cada campo.
-				Genera validaciones y manejo de excepciones para cada método y campo de la aplicación
+- Product
+
+Atributos:
+
+- Long id, 
+- String name, 
+- String label, 
+- Double price,
+- Date createdAt
+	
+Requisitos:  
+- Define la entidad Product.
+- Crea un repositorio JPA para Product.
+- Implementa un controlador REST con endpoints para crear, consultar, actualizar y eliminar productos.
+
+	Topic: Consulta con filtros.
+
+Crea un endpoint GET para consultar los productos por nombre
+			
+Requisitos:
+- El método debe recibir el texto a buscar por Name.
+- Las coincidencias deben ordenarse descendentemente.
+
+
+### Sección 2: Excepciones
+
+	Topic: Manejo de excepciones para los endpoints
+
+Requisitos:
+- Valida que los datos de entrada no sean nulos para el método POST (name, label, price)
