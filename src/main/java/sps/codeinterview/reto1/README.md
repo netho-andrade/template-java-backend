@@ -37,5 +37,4 @@ Requisitos:
 	Topic: Manejo de excepciones para los endpoints
 
 Requisitos:
-- Genera un manejo de excepciones para cada método.
-- (opcional) Crear una excepción personalizada con el package sps.codeinterview.reto1.exception;
+- Valida que los datos de entrada no sean nulos para el método POST (name, label, price)
