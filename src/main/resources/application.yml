@@ -3,8 +3,8 @@ spring:
     name: todo
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: admin
-    password: password
+    username: postgres
+    password: Cris49302@123
   jpa:
     hibernate:
       ddl-auto: update
