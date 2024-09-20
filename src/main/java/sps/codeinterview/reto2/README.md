@@ -41,5 +41,5 @@ RETO 2. CONSUMIR API GET Y FILTRAR LISTA
           "title": "dolor sint quo a velit explicabo quia nam",  
           "body": "eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse"  
       },  
-      ...  
+     
   ]  
